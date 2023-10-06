@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N-V Travel </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logo2.jpg" type="image/svg+xml">
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Dancing+Script:wght@700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,700;1,700&family=Dancing+Script:wght@700&display=swap');
+
+
+
+        .hero {
+            background-image: url("./images/shimla4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-color: hsla(0, 0%, 0%, 0.7);
+            background-blend-mode: overlay;
+            display: grid;
+            place-items: center;
+            min-height: 600px;
+            text-align: center;
+            padding-top: 125px;
+        }
+
+
+        .main {
+
+            margin: 20px;
+
+        }
+
+        .btn-all {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 5px;
+        }
+
+        button {
+            margin: 5px;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+        }
+
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+      
+
+       
+        .column {
+            float: left;
+            width: 33.33%;
+            display: none;
+
+        }
+        img{
+            height: 250px;
+        }
+
+        
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .content {
+            background-color: whitesmoke;
+            padding: 10px;
+            height: 350px;
+        }
+
+        .show {
+            display: block;
+            height: 300px;
+            width: 300px;
+        }
+
+        .btn1 {
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: hsl(214, 57%, 51%);
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            background-color: hsl(214, 72%, 33%);
+            color: whitesmoke;
+        }
+
+        .btn1.active {
+            background-color: hsl(208, 97%, 12%);
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body id="top">
+
+  
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="overlay" data-overlay></div>
+
+    <div class="header-top">
+      <div class="container">
+
+        <a href="tel:+01123456790" class="helpline-box">
+
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <div class="wrapper">
+            <p class="helpline-title">For Further Inquires :</p>
+
+            <p class="helpline-number">+91 8109698076</p>
+          </div>
+
+        </a>
+
+        <a href="#" class="logo" style="display: flex; color: hsl(214, 57%, 51%); font-size:28px;   align-items: center; font-size:28px; font-family: 'Dancing Script', cursive;
+        justify-content: center; ">NV-
+
+          <span
+            style="color: hsl(214, 57%, 51%); font-size:28px; font-family: 'Dancing Script', cursive; font-weight: 600; ">
+            Travels</span>
+
+        </a>
+
+
+        <div class="header-btn-group">
+          <a href="search.html">
+            <button class="search-btn" style="color: white;" aria-label="Search">
+              <ion-icon name="search"></ion-icon>
+            </button>
+          </a>
+
+          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom">
+      <div class="container">
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+
+            <a href="#" class="logo" style="display: flex; color: hsl(214, 57%, 51%); font-size:28px;   align-items: center; font-size:28px; font-family: 'Dancing Script', cursive;
+        justify-content: center; ">NV-
+
+              <span
+                style="color: hsl(214, 57%, 51%); font-size:28px; font-family: 'Dancing Script', cursive; font-weight: 600; ">
+                Travels</span>
+
+            </a>
+
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </div>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+           
+
+            <li>
+              <a href="destination.html" class="navbar-link" data-nav-link>destination</a>
+            </li>
+
+            <li>
+              <a href="package.html" class="navbar-link" data-nav-link>packages</a>
+            </li>
+
+            <li>
+              <a href="gallery.html" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <a href="book.html"> <button class="btn btn-primary">Book Now</button>
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+
+
+    <main>
+        <article>
+
+
+            <section class="hero" id="home">
+                <div class="container">
+
+                    <h2 class="h1 hero-title">Explore All Places in Gallery </h2>
+
+                    <p class="hero-text">
+                        India is one of the world's most attractive countries, and multiple factors have increased its
+                        popularity
+                        among tourists. Its natural wonders, artificial marvels, national parks, theme parks, etc
+                    </p>
+
+                    <div class="btn-group">
+                        <button class="btn btn-primary">Learn more</button>
+
+                        <button class="btn btn-secondary">Book now</button>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+            <!-- MAIN (Center website) -->
+            <div class="main">
+
+                <h1>Gallery</h1>
+                <hr>
+
+                <h2>Best Places In India</h2>
+
+                <div id="myBtnContainer" class="btn-all">
+                    <button class="btn1 active" onclick="filterSelection('all')">All Images</button>
+                    <button class="btn1" onclick="filterSelection('nature')">Beach</button>
+                    <button class="btn1" onclick="filterSelection('cars')">Nature</button>
+                    <button class="btn1" onclick="filterSelection('people')">Beauty</button>
+                </div>
+
+                <!-- Portfolio Gallery Grid -->
+
+               <br>
+                <div class="row">
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/travel-image2.jpg" alt="Mountains" style="width:100%">
+                            <h4>Goa Beach</h4>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/goa1.jpg" alt="Lights" style="width:100%">
+                            <h4>Goa Beach</h4>
+                        </div>
+                    </div>
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/goa2.jpg" alt="Nature" style="width:100%">
+                            <h4>Goa Beach</h4>
+                        </div>
+                    </div>
+
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/goa3.jpg" alt="Nature" style="width:100%">
+                            <h4>Goa Beach</h4>
+                        </div>
+                    </div>
+
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/goa4.jpg" alt="Nature" style="width:100%">
+                            <h4>Goa Beach</h4>
+                        </div>
+                    </div>
+
+
+                    <div class="column nature">
+                        <div class="content">
+                            <img src="images/goa5.jpg" alt="Nature" style="width:100%">
+                            <h4>Goa Beach</h4>
+                        </div>
+                    </div>
+
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/kerela.jpg" alt="Nature" style="width:100%">
+                            <h4>Kerala</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/kerela1.jpg" alt="Nature" style="width:100%">
+                            <h4>Kerala</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/kerela2.jpg" alt="Nature" style="width:100%">
+                            <h4>Kerala</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/kerela3.jpg" alt="Nature" style="width:100%">
+                            <h4>Kerala</h4>
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/kerela4.jpg" alt="Nature" style="width:100%">
+                            <h4>Kerala</h4>
+                        </div>
+                    </div>
+                    <div class="column cars">
+                        <div class="content">
+                            <img src="images/travel-image3.jpg" alt="Nature" style="width:100%">
+                            <h4>Kerala</h4>
+                        </div>
+                    </div>
+
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/udaipur.jpg" alt="Car" style="width:100%">
+                            <h4>Udaipur</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/travel-image1.jpg" alt="Car" style="width:100%">
+                            <h4>Udaipur</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/shimla1.jpg" alt="Car" style="width:100%">
+                            <h4>Udaipur</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/travel-image4.jpg" alt="Car" style="width:100%">
+                            <h4>Manali</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/shimla2.jpg" alt="Car" style="width:100%">
+                            <h4>Shimla</h4>
+                        </div>
+                    </div>
+                    
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/shimla4.jpg" alt="Car" style="width:100%">
+                            <h4>Shimla</h4>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/taj.jpg" alt="Car" style="width:100%">
+                            <h4>Taj</h4>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/gallery8.jpg" alt="Car" style="width:100%">
+                            <h4>Taj</h4>
+                        </div>
+                    </div>
+                    <div class="column people">
+                        <div class="content">
+                            <img src="images/kolkata.jpg" alt="Car" style="width:100%">
+                            <h4>kolkata</h4>
+                        </div>
+                    </div>
+                    <!-- END GRID -->
+                </div>
+
+               
+
+
+                <!-- END MAIN -->
+            </div>
+
+
+
+
+
+
+
+
+        </article>
+    </main>
+
+    
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+
+          <a href="#" class="logo" style="display: flex; color: hsl(214, 57%, 51%); font-size:28px;   align-items: center; font-size:28px; font-family: 'Dancing Script', cursive;
+        justify-content: center; ">NV-
+
+            <span
+              style="color: hsl(214, 57%, 51%); font-size:28px; font-family: 'Dancing Script', cursive; font-weight: 600; ">
+              Travels</span>
+
+          </a>
+
+          <p class="footer-text">
+            Travel is the movement of people between distant geographical locations. Travel can be done by foot,
+            bicycle, automobile, train, boat, bus, airplane, ship or other means, with or without luggage, and can be
+            one way or round trip.
+          </p>
+
+        </div>
+
+        <div class="footer-contact">
+
+          <h4 class="contact-title">Contact Us</h4>
+
+          <p class="contact-text">
+            Feel free to contact and reach us !!
+          </p>
+
+          <ul>
+
+            <li class="contact-item">
+              <ion-icon name="call-outline"></ion-icon>
+
+              <a href="tel:+01123456790" class="contact-link">+91 8109698076</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="mail-outline"></ion-icon>
+
+              <a href="mailto:info.tourly.com" class="contact-link">neerajverma@gmail.com</a>
+            </li>
+
+            <li class="contact-item">
+              <ion-icon name="location-outline"></ion-icon>
+
+              <address>Bhopal Madhya pardesh</address>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-form">
+          <h4 class="contact-title">Important Link</h4>
+          <a href="index.html" style="color: white; padding: 5px" >Home</a>
+          <a href="destination.html" style="color: white; padding: 5px"  >destination</a>
+          <a href="package.html" style="color: white; padding: 5px" >packages</a>
+          <a href="gallery.html" style="color: white; padding: 5px" >gallery</a>
+          <a href="contact.html" style="color: white; padding: 5px" >contact</a>
+        
+          
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 <a href=""></a>. All rights reserved
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term & Condition</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">FAQ</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+    <!-- 
+- #GO TO TOP
+-->
+
+    <a href="#top" class="go-top" data-go-top>
+        <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <!-- 
+- custom js link
+-->
+    <script src="scripts.js"></script>
+
+    <!-- 
+- ionicon link
+-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+            }
+        }
+
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>

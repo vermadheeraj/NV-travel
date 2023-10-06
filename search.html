@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N-V Travel </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./images/logo3.jpg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: url(./images/travel-image2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: hsla(0, 0%, 0%, 0.7);
+      background-blend-mode: overlay;
+    }
+
+    h2 {
+      font-size: 30px;
+      text-align: center;
+      font-weight: 600;
+      color: whitesmoke;
+      font-family: math;
+      padding-top: 15px;
+    }
+
+    #myInput {
+      background-image: url('/css/searchicon.png');
+      background-position: 10px 12px;
+      background-repeat: no-repeat;
+      width: 100%;
+      font-size: 20px;
+      padding: 12px 20px 12px 40px;
+      border: 1px solid #ddd;
+      margin-bottom: 12px;
+      background: #00000026;
+      color: white;
+      font-weight: 600;
+    }
+
+    #myUL{
+        list-style-type: none;
+        padding: 0px;
+        margin: 0 75px;
+        background: #0000003b;
+    }
+
+    #myUL li a {
+      margin-top: -1px;
+      background-color: #f6f6f6;
+      padding: 12px 32px;
+      text-decoration: none;
+      font-size: 18px;
+      color: whitesmoke;
+      display: block;
+      background: #00000038;
+      font-family: monospace;
+     
+    
+      
+    }
+    #myInput:hover{
+      border: 1px solid orange;
+    }
+
+    #myUL li a:hover:not(.header) {
+      background-color: black;
+      color: whitesmoke;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- 
+    - #HERO
+  -->
+
+
+
+
+  <h2>Search All Places </h2>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for place names.." title="Type in a name">
+
+  <ul id="myUL">
+    <li><a href="welcome.html">Goa</a></li>
+    <li><a href="#">Kerala</a></li>
+
+    <li><a href="#">Udaipur</a></li>
+    <li><a href="#">Shimla</a></li>
+
+    <li><a href="#">Manali</a></li>
+    <li><a href="#">Bhopal</a></li>
+    <li><a href="#">Rajasthan</a></li>
+    
+    <li><a href="#">Manali</a></li>
+    <li><a href="#">Bhopal</a></li>
+    <li><a href="#">Rajasthan</a></li>
+    
+    <li><a href="#">Karnataka</a></li>
+    <li><a href="#">Rishikesh</a></li>
+    <li><a href="#">Darjeeling</a></li>
+  </ul>
+
+  <script>
+    function myFunction() {
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById("myInput");
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName("li");
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+  </script>
+
+</body>
+
+</html>
